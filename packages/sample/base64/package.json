@@ -1,4 +1,6 @@
 {
+  "name": "base64",
+  "main": "index.js",
   "dependencies": {
     "base64url": "^3.0.1"
   }
