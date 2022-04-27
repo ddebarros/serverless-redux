@@ -9,8 +9,8 @@ async function main() {
       "body": inventory
     }
 
-  } catch {
-    console.error();
+  } catch(error) {
+    console.error(error);
   }
 }
 
