@@ -1,58 +1,9 @@
-targetNamespace: ''
-cleanNamespace: false
-parameters: {}
 packages:
   - name: sample
-    shared: false
-    clean: false
-    environment: {}
-    parameters: {}
-    annotations: {}
     actions:
-      - name: hello
-        clean: false
-        binary: false
-        main: ''
-        runtime: 'nodejs:default'
-        web: true
-        webSecure: false
-        parameters: {}
-        environment: {}
-        annotations: {}
-        limits: {}
-      - name: test
-        clean: false
-        binary: false
-        main: ''
-        runtime: 'nodejs:default'
-        web: true
-        webSecure: false
-        parameters: {}
-        environment: {}
-        annotations: {}
-        limits: {}
-      - name: base64
-        clean: false
-        binary: false
-        main: ''
-        runtime: 'nodejs:default'
-        web: true
-        webSecure: false
-        parameters: {}
-        environment: {}
-        annotations: {}
-        limits: {}
       - name: getinventory
-        clean: false
-        binary: false
-        main: ''
         runtime: 'nodejs:default'
-        web: true
-        webSecure: false
-        parameters: {}
-        environment: 
-          CA_CERT: |
-            ${CA_CERT}
-          DATABASE_URL: "${DATABASE_URL}"
-        annotations: {}
-        limits: {}
+environment: 
+  CA_CERT: $(CA_CERT)
+  DATABASE: "${DATABASE}"
+  DATABASE_URL: "${DATABASE_URL}"
